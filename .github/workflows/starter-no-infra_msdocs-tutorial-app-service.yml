@@ -65,7 +65,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'msdocs-tutorial-app-service'
+          app-name: 'msdocs-dotnet-app-lz'
           slot-name: 'Production'
           package: .
           
