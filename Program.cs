@@ -9,6 +9,7 @@ if(builder.Environment.IsDevelopment())
         options.UseSqlServer(builder.Configuration.GetConnectionString("MyDbConnection")));
     builder.Services.AddDistributedMemoryCache();
 }
+
 else
 {
     builder.Services.AddDbContext<MyDatabaseContext>(options =>
